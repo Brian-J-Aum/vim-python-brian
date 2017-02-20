@@ -67,4 +67,4 @@ Plugin  'klen/python-mode'
 
 Plugin  'Valloric/YouCompleteMe'
 
-
+call vundle#end()
