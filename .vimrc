@@ -1,27 +1,27 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 let mapleader=","
 set number
 
 
-Bundle 'gmarik/vundle'
+Plugin  'VundleVim/Vundle.vim'
 filetype plugin indent on
 
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin  'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 
-Bundle 'tpope/vim-fugitive'
+Plugin  'tpope/vim-fugitive'
 
-Bundle 'scrooloose/nerdtree'
+Plugin  'scrooloose/nerdtree'
 map<Leader>n : NERDTreeToggle<CR>
 
-Bundle 'klen/python-mode'
+Plugin  'klen/python-mode'
  " Keys:
  " K             Show python docs
  " <Ctrl-Space>  Rope autocomplete
@@ -65,6 +65,6 @@ Bundle 'klen/python-mode'
  " Don't autofold code
  let g:pymode_folding = 0
 
-Bundle 'Valloric/YouCompleteMe'
+Plugin  'Valloric/YouCompleteMe'
 
 
